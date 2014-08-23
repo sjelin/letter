@@ -1,4 +1,97 @@
-$font-color: #444444;
+$pw: 8.5in;
+$ph: 11in;
+$pvm: 0.5in;
+$phm: $pvm;
+
+$icon-w: 0.79in;
+$median-w: $phm;
+$content-w: $pw - 2 * $phm - $icon-w - $median-w;
+$space-h: $pvm;
+
+$text-color: #444444;
 $base-color: #0395DA;
 $highlight-color: #48A2A8;
-$hr-color: #CCCCCC;
+$vr-color: #CCCCCC;
+
+a {
+	color: $text-color;
+	text-decoration: none;
+}
+
+@media screen {
+	html {
+		background: #EEEEEE;
+	}
+}
+
+body {
+	color: $text-color;
+	width: $pw - 2*$phm;
+	height: $ph - 2*$pvm;
+	padding: $pvm $phm;
+	background: #FFFFFF;
+	top: 0em;
+	bottom: 0em;
+	left: 0em;
+	right: 0em;
+	margin: auto;
+	font-family: Lato;
+	font-weight: 300;
+	position: relative;
+
+	&:before {
+		content: " ";
+		position: absolute;
+		top: $pvm;
+		bottom: $pvm;
+		left: $phm + $icon-w + ($median-w / 2);
+		width: 0in;
+		border-left: 1px solid $vr-color;
+	}
+}
+
+
+body > div {
+	padding-left: $icon-w + $median-w;
+	margin: $space-h 0in;
+	&:first-child { margin-top: 0in; } 
+	&:last-child { margin-bottom: 0in; } 
+}
+
+.info {
+	position: relative;
+	p { margin: 0px; }
+	img {
+		position: absolute;
+		left: 0in;
+		right: $content-w + $median-w;
+		top: 0in;
+		bottom: 0in;
+		margin: auto;
+		max-width: $icon-w;
+	}
+	&.my img {
+		width: $icon-w;
+	}
+}
+
+.letter .content p {
+	text-indent: 2em;
+	&:first-child {
+		text-indent: 0em;
+	}
+}
+
+.signature {
+	span {
+		position: absolute;
+		right: 29em;
+		bottom: $pvm + 0.65in;
+	}
+	.name {
+		font-family: Pacifico;
+		font-size: 3em;
+		right: $phm;
+		bottom: $pvm - 0.15in;
+	}
+}

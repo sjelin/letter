@@ -1,0 +1,67 @@
+a {
+  color: #444444;
+  text-decoration: none; }
+
+@media screen {
+  html {
+    background: #EEEEEE; } }
+body {
+  color: #444444;
+  width: 7.5in;
+  height: 10in;
+  padding: 0.5in 0.5in;
+  background: #FFFFFF;
+  top: 0em;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  margin: auto;
+  font-family: Lato;
+  font-weight: 300;
+  position: relative; }
+  body:before {
+    content: " ";
+    position: absolute;
+    top: 0.5in;
+    bottom: 0.5in;
+    left: 1.54in;
+    width: 0in;
+    border-left: 1px solid #cccccc; }
+
+body > div {
+  padding-left: 1.29in;
+  margin: 0.5in 0in; }
+  body > div:first-child {
+    margin-top: 0in; }
+  body > div:last-child {
+    margin-bottom: 0in; }
+
+.info {
+  position: relative; }
+  .info p {
+    margin: 0px; }
+  .info img {
+    position: absolute;
+    left: 0in;
+    right: 6.71in;
+    top: 0in;
+    bottom: 0in;
+    margin: auto;
+    max-width: 0.79in; }
+  .info.my img {
+    width: 0.79in; }
+
+.letter .content p {
+  text-indent: 2em; }
+  .letter .content p:first-child {
+    text-indent: 0em; }
+
+.signature span {
+  position: absolute;
+  right: 29em;
+  bottom: 1.15in; }
+.signature .name {
+  font-family: Pacifico;
+  font-size: 3em;
+  right: 0.5in;
+  bottom: 0.35in; }
