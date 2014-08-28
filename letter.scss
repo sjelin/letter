@@ -2,6 +2,9 @@ $pw: 8.5in;
 $ph: 11in;
 $pvm: 0.5in;
 $phm: $pvm;
+$phm-l: $phm;
+$phm-r: $phm*1.5;
+
 
 $icon-w: 0.79in;
 $median-w: $phm;
@@ -26,9 +29,9 @@ a {
 
 body {
 	color: $text-color;
-	width: $pw - 2*$phm;
+	width: $pw - $phm-l - $phm-r;
 	height: $ph - 2*$pvm;
-	padding: $pvm $phm;
+	padding: $pvm $phm-r $pvm $phm-l;
 	background: #FFFFFF;
 	top: 0em;
 	bottom: 0em;
@@ -91,7 +94,7 @@ body > div {
 	.name {
 		font-family: Pacifico;
 		font-size: 3em;
-		right: $phm;
+		right: $phm-r;
 		bottom: $pvm - 0.15in;
 	}
 }

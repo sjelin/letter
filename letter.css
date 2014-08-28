@@ -7,9 +7,9 @@ a {
     background: #EEEEEE; } }
 body {
   color: #444444;
-  width: 7.5in;
+  width: 7.25in;
   height: 10in;
-  padding: 0.5in 0.5in;
+  padding: 0.5in 0.75in 0.5in 0.5in;
   background: #FFFFFF;
   top: 0em;
   bottom: 0em;
@@ -63,5 +63,5 @@ body > div {
 .signature .name {
   font-family: Pacifico;
   font-size: 3em;
-  right: 0.5in;
+  right: 0.75in;
   bottom: 0.35in; }
